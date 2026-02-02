@@ -17,7 +17,7 @@ import { UpdateBookDto } from './dto/update-book.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
-import { UserRole } from '@prisma/client';
+import { user_role as UserRole } from '@prisma/client';
 
 // SWAGGER
 import {
@@ -41,7 +41,7 @@ export class BooksController {
     return this.booksService.create(dto);
   }
 
-  // ===== READ ALL (LOGIN REQUIRED) =====
+  // ===== READ ALL =====
   @UseGuards(JwtAuthGuard)
   @Get()
   @ApiOperation({ summary: 'Menampilkan seluruh data buku' })
@@ -49,7 +49,7 @@ export class BooksController {
     return this.booksService.findAll();
   }
 
-  // ===== READ ONE (LOGIN REQUIRED) =====
+  // ===== READ ONE =====
   @UseGuards(JwtAuthGuard)
   @Get(':id')
   @ApiOperation({ summary: 'Menampilkan detail buku berdasarkan ID' })
