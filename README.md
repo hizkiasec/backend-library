@@ -1,78 +1,70 @@
-<style>
-  .glass {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 16px;
-    padding: 24px;
-    margin: 24px auto;
-    max-width: 900px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  }
-
-  .title {
-    font-size: 2.4rem;
-    font-weight: 800;
-    background: linear-gradient(90deg, #ff416c, #ff4b2b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-  }
-
-  .subtitle {
-    text-align: center;
-    color: #ccc;
-    margin-top: 8px;
-  }
-
-  .badge {
-    display: inline-block;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    font-size: 12px;
-    margin: 4px;
-  }
-</style>
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" width="120" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=140&section=header&text=NestJS%20Backend%20Project&fontSize=36&fontAlignY=55&desc=Modern%20•%20Elegant%20•%20Professional&descAlignY=75" />
 </p>
 
-<div class="glass">
-  <div class="title">NestJS Backend Project</div>
-  <p class="subtitle">Professional • Scalable • Clean Architecture</p>
+<p align="center">
+  <b>High-quality Backend Service built with NestJS & TypeScript</b><br/>
+  Clean architecture • Scalable design • Production-ready
+</p>
 
-  <p align="center">
-    <span class="badge">Author: Hizkia Agellvin Girsang</span>
-    <span class="badge">NestJS</span>
-    <span class="badge">TypeScript</span>
-    <span class="badge">MIT License</span>
-  </p>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Author-Hizkia%20Agellvin%20Girsang-blueviolet" />
+  <img src="https://img.shields.io/badge/Framework-NestJS-red" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-3178c6" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
+
+---
+
+<table align="center">
+<tr>
+<td align="center" width="33%">
+
+### ⚡ Performance
+
+Fast response time with optimized architecture
+
+</td>
+<td align="center" width="33%">
+
+### 🧩 Modular Design
+
+Clean, scalable, and maintainable structure
+
+</td>
+<td align="center" width="33%">
+
+### 🔐 Secure
+
+Follows backend security best practices
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## ✨ Overview
 
-This repository contains a **professional-grade backend service** built using **NestJS** and **TypeScript**, designed with scalability, modularity, and maintainability as top priorities.
+This repository contains a **modern and elegant backend application** built using **NestJS**. The project is structured to reflect **real-world professional standards**, suitable for both production systems and portfolio presentation.
 
-The structure and configuration follow **industry best practices**, making this project suitable for:
+Designed with focus on:
 
-* Enterprise backend services
-* RESTful APIs
-* Production-ready systems
-* Developer portfolio showcase
+* Code readability
+* Long-term maintainability
+* Easy scalability
 
 ---
 
 ## 🧠 Tech Stack
 
-* **Node.js** – JavaScript runtime
-* **NestJS** – Progressive Node.js framework
-* **TypeScript** – Strongly typed language
-* **npm** – Dependency management
+| Technology | Description                   |
+| ---------- | ----------------------------- |
+| Node.js    | JavaScript runtime            |
+| NestJS     | Progressive backend framework |
+| TypeScript | Strongly typed language       |
+| npm        | Dependency manager            |
 
 ---
 
@@ -84,7 +76,7 @@ npm install
 
 ---
 
-## ▶️ Running the App
+## ▶️ Running the Application
 
 ```bash
 # development (hot reload)
@@ -108,26 +100,30 @@ npm run test:cov
 
 ## 🚀 Deployment
 
-Refer to the official NestJS deployment guide:
+This project is ready for deployment on modern infrastructure such as:
+
+* VPS with PM2
+* Docker containers
+* Cloud platforms (AWS, GCP)
+
+Official guide:
 [https://docs.nestjs.com/deployment](https://docs.nestjs.com/deployment)
-
-Compatible with:
-
-* VPS (PM2)
-* Docker
-* Cloud platforms (AWS, etc.)
 
 ---
 
 ## 👤 Author
 
 **Hizkia Agellvin Girsang**
-Backend Developer | NestJS
+Backend Developer | NestJS & TypeScript
 
 ---
 
 ## 📜 License
 
-MIT License — free to use, modify, and distribute with attribution.
+Licensed under the **MIT License** — free to use and modify.
 
-<p align="center"><i>Designed with modern UI effects inside GitHub README limitations.</i></p>
+<p align="center"><i>Designed to look modern, clean, and professional within GitHub README limitations.</i></p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=80&section=footer" />
+</p>
