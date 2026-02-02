@@ -1,152 +1,143 @@
-<!-- ===================== HERO ===================== -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=30&duration=3000&color=E0234E&center=true&vCenter=true&width=900&lines=Backend+Library+API;NestJS+%7C+TypeScript+%7C+Node.js;Professional+Backend+Architecture;Built+by+Hizkia+Agellvin+Girsang" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" width="120" alt="NestJS Logo" />
+</p>
+
+<h1 align="center">🚀 NestJS Backend Project</h1>
+
+<p align="center">
+  <b>Professional Backend Service built with NestJS & TypeScript</b><br/>
+  Clean architecture • Scalable • Production‑ready
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Framework-NestJS-red?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Runtime-Node.js-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge"/>
-</p>
-
-<p align="center">
-  <b>Progressive • Scalable • Maintainable • Production-Ready Backend Service</b>
+  <img src="https://img.shields.io/badge/Author-Hizkia%20Agellvin%20Girsang-blue" />
+  <img src="https://img.shields.io/badge/Framework-NestJS-red" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-blue" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
 </p>
 
 ---
 
-## 📖 Description
+## ✨ Overview
 
-**Backend Library API** adalah backend service berbasis  
-**NestJS Framework (Node.js + TypeScript)** yang dirancang untuk membangun REST API
-yang efisien, scalable, dan mudah dipelihara.
+This project is a **modern and professional backend application** built using **NestJS**, designed with scalability, maintainability, and clean code principles in mind.
 
-Project ini dikembangkan oleh **Hizkia Agellvin Girsang** sebagai:
-- starter backend profesional
-- referensi arsitektur NestJS modern
-- fondasi aplikasi backend skala kecil hingga enterprise
+It is suitable for:
 
----
+* REST API services
+* Enterprise backend systems
+* Scalable startup products
+* Academic & professional portfolios
 
-## 🧠 Architecture & Design Philosophy
-
-Backend ini dibangun dengan prinsip utama:
-
-- **Modular Architecture**
-- **Separation of Concerns**
-- **Clean Code**
-- **Scalability First**
-- **Maintainability & Readability**
-- **Industry Best Practices**
-
-Setiap module berdiri secara independen sehingga memudahkan pengembangan dan scaling.
+The project structure follows **best practices** and is ready for **real‑world production use**.
 
 ---
 
-## 🛠️ Technology Stack
+## 🧠 Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,typescript,nestjs,jest,docker&theme=dark" />
-</p>
-
-- **Node.js** — JavaScript runtime
-- **NestJS** — Progressive backend framework
-- **TypeScript** — Strongly typed JavaScript
-- **REST API** — Architectural style
-- **Jest** — Unit & E2E testing
+* **Node.js** – Runtime environment
+* **NestJS** – Progressive backend framework
+* **TypeScript** – Type‑safe JavaScript
+* **npm** – Package manager
 
 ---
 
-## 📂 Project Structure
+## 📦 Project Setup
 
-src/
-├── app.module.ts # Root module
-├── app.controller.ts # Root controller
-├── app.service.ts # Core service
-├── main.ts # Application entry point
-└── modules/ # Feature modules
-
-
-Struktur ini mengikuti **NestJS Official Architecture Pattern**.
-
----
-
-## ⚙️ Project Setup
-
-Install seluruh dependency:
+Install all dependencies:
 
 ```bash
 npm install
-▶️ Compile and Run the Project
-# development
-npm run start
+```
 
-# watch mode (recommended)
+---
+
+## ▶️ Running the Application
+
+### Development Mode (Hot Reload)
+
+```bash
 npm run start:dev
+```
 
-# production mode
+### Standard Mode
+
+```bash
+npm run start
+```
+
+### Production Mode
+
+```bash
 npm run start:prod
-Aplikasi akan berjalan di:
+```
 
-http://localhost:3000
-🧪 Run Tests
+---
+
+## 🧪 Testing
+
+Run available test suites:
+
+```bash
 # unit tests
 npm run test
 
-# e2e tests
+# end-to-end tests
 npm run test:e2e
 
 # test coverage
 npm run test:cov
-Testing menggunakan Jest untuk memastikan stabilitas dan kualitas aplikasi.
+```
 
-🚀 Deployment
-Saat siap deploy ke production, perhatikan beberapa hal berikut:
+---
 
-konfigurasi environment variables
+## 🚀 Deployment
 
-gunakan process manager (PM2 atau Docker)
+Before deploying to production:
 
-aktifkan logging dan error handling
+* Set environment variables properly
+* Enable production optimizations
+* Use a secure Node.js environment
 
-gunakan reverse proxy seperti NGINX
+NestJS provides detailed deployment guidance here:
+👉 [https://docs.nestjs.com/deployment](https://docs.nestjs.com/deployment)
 
-Dokumentasi resmi NestJS:
-https://docs.nestjs.com/deployment
+This application is compatible with cloud platforms such as:
 
-📚 Resources
-Beberapa resource yang berguna untuk pengembangan:
+* AWS
+* VPS (Ubuntu + PM2)
+* Docker environments
 
-NestJS Documentation
-https://docs.nestjs.com
+---
 
-NestJS Discord Community
-https://discord.gg/G7Qnnhy
+## 📁 Project Philosophy
 
-NestJS Courses
-https://courses.nestjs.com
+✔ Clean Architecture
+✔ Modular Structure
+✔ Easy to Maintain
+✔ Ready for Scaling
+✔ Professional Codebase
 
-NestJS DevTools
-https://devtools.nestjs.com
+This repository is **customized and maintained** as part of a personal/professional development workflow.
 
-🧩 Support
-Project ini bersifat open-source dan berlisensi MIT.
+---
 
-Jika kamu ingin menggunakan atau mengembangkan project ini:
+## 👤 Author
 
-fork repository
+**Hizkia Agellvin Girsang**
+Backend Developer • NestJS Enthusiast
 
-modifikasi sesuai kebutuhan
+---
 
-gunakan sebagai fondasi project production
+## 📜 License
 
-👤 Stay in Touch
-<p align="center"> <img src="https://avatars.githubusercontent.com/u/00000000?v=4" width="120" style="border-radius:50%"/> </p> <h3 align="center">Hizkia Agellvin Girsang</h3> <p align="center"> Backend Developer • Software Engineer Enthusiast </p> <p align="center"> <a href="https://github.com/hizkiasec"> <img src="https://img.shields.io/badge/GitHub-hizkiasec-black?style=for-the-badge&logo=github"/> </a> </p>
-📄 License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
-You are free to use, modify, and distribute this project.
+You are free to use, modify, and distribute this software with proper attribution.
 
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=E0234E&height=130&section=footer"/> </p> ```
+---
+
+<p align="center">
+  <i>Built with professionalism, structure, and scalability in mind.</i>
+</p>
