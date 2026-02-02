@@ -1,51 +1,82 @@
+<style>
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  }
+
+  .title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-top: 8px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 12px;
+    margin: 4px;
+  }
+</style>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" width="120" alt="NestJS Logo" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" width="120" />
 </p>
 
-<h1 align="center">🚀 NestJS Backend Project</h1>
+<div class="glass">
+  <div class="title">NestJS Backend Project</div>
+  <p class="subtitle">Professional • Scalable • Clean Architecture</p>
 
-<p align="center">
-  <b>Professional Backend Service built with NestJS & TypeScript</b><br/>
-  Clean architecture • Scalable • Production‑ready
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Author-Hizkia%20Agellvin%20Girsang-blue" />
-  <img src="https://img.shields.io/badge/Framework-NestJS-red" />
-  <img src="https://img.shields.io/badge/Language-TypeScript-blue" />
-  <img src="https://img.shields.io/badge/Status-Active-success" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
-</p>
+  <p align="center">
+    <span class="badge">Author: Hizkia Agellvin Girsang</span>
+    <span class="badge">NestJS</span>
+    <span class="badge">TypeScript</span>
+    <span class="badge">MIT License</span>
+  </p>
+</div>
 
 ---
 
 ## ✨ Overview
 
-This project is a **modern and professional backend application** built using **NestJS**, designed with scalability, maintainability, and clean code principles in mind.
+This repository contains a **professional-grade backend service** built using **NestJS** and **TypeScript**, designed with scalability, modularity, and maintainability as top priorities.
 
-It is suitable for:
+The structure and configuration follow **industry best practices**, making this project suitable for:
 
-* REST API services
-* Enterprise backend systems
-* Scalable startup products
-* Academic & professional portfolios
-
-The project structure follows **best practices** and is ready for **real‑world production use**.
+* Enterprise backend services
+* RESTful APIs
+* Production-ready systems
+* Developer portfolio showcase
 
 ---
 
 ## 🧠 Tech Stack
 
-* **Node.js** – Runtime environment
-* **NestJS** – Progressive backend framework
-* **TypeScript** – Type‑safe JavaScript
-* **npm** – Package manager
+* **Node.js** – JavaScript runtime
+* **NestJS** – Progressive Node.js framework
+* **TypeScript** – Strongly typed language
+* **npm** – Dependency management
 
 ---
 
-## 📦 Project Setup
-
-Install all dependencies:
+## 📦 Installation
 
 ```bash
 npm install
@@ -53,23 +84,13 @@ npm install
 
 ---
 
-## ▶️ Running the Application
-
-### Development Mode (Hot Reload)
+## ▶️ Running the App
 
 ```bash
+# development (hot reload)
 npm run start:dev
-```
 
-### Standard Mode
-
-```bash
-npm run start
-```
-
-### Production Mode
-
-```bash
+# production
 npm run start:prod
 ```
 
@@ -77,16 +98,9 @@ npm run start:prod
 
 ## 🧪 Testing
 
-Run available test suites:
-
 ```bash
-# unit tests
 npm run test
-
-# end-to-end tests
 npm run test:e2e
-
-# test coverage
 npm run test:cov
 ```
 
@@ -94,50 +108,26 @@ npm run test:cov
 
 ## 🚀 Deployment
 
-Before deploying to production:
+Refer to the official NestJS deployment guide:
+[https://docs.nestjs.com/deployment](https://docs.nestjs.com/deployment)
 
-* Set environment variables properly
-* Enable production optimizations
-* Use a secure Node.js environment
+Compatible with:
 
-NestJS provides detailed deployment guidance here:
-👉 [https://docs.nestjs.com/deployment](https://docs.nestjs.com/deployment)
-
-This application is compatible with cloud platforms such as:
-
-* AWS
-* VPS (Ubuntu + PM2)
-* Docker environments
-
----
-
-## 📁 Project Philosophy
-
-✔ Clean Architecture
-✔ Modular Structure
-✔ Easy to Maintain
-✔ Ready for Scaling
-✔ Professional Codebase
-
-This repository is **customized and maintained** as part of a personal/professional development workflow.
+* VPS (PM2)
+* Docker
+* Cloud platforms (AWS, etc.)
 
 ---
 
 ## 👤 Author
 
 **Hizkia Agellvin Girsang**
-Backend Developer • NestJS Enthusiast
+Backend Developer | NestJS
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+MIT License — free to use, modify, and distribute with attribution.
 
-You are free to use, modify, and distribute this software with proper attribution.
-
----
-
-<p align="center">
-  <i>Built with professionalism, structure, and scalability in mind.</i>
-</p>
+<p align="center"><i>Designed with modern UI effects inside GitHub README limitations.</i></p>
