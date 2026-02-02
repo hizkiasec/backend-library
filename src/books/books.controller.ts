@@ -19,6 +19,15 @@ import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { UserRole } from '@prisma/client';
 
+// SWAGGER
+import {
+  ApiTags,
+  ApiBearerAuth,
+  ApiOperation,
+} from '@nestjs/swagger';
+
+@ApiTags('Books')
+@ApiBearerAuth()
 @Controller('books')
 export class BooksController {
   constructor(private readonly booksService: BooksService) {}
@@ -27,6 +36,7 @@ export class BooksController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.ADMIN)
   @Post()
+  @ApiOperation({ summary: 'Menambahkan buku (ADMIN only)' })
   create(@Body() dto: CreateBookDto) {
     return this.booksService.create(dto);
   }
@@ -34,6 +44,7 @@ export class BooksController {
   // ===== READ ALL (LOGIN REQUIRED) =====
   @UseGuards(JwtAuthGuard)
   @Get()
+  @ApiOperation({ summary: 'Menampilkan seluruh data buku' })
   findAll() {
     return this.booksService.findAll();
   }
@@ -41,6 +52,7 @@ export class BooksController {
   // ===== READ ONE (LOGIN REQUIRED) =====
   @UseGuards(JwtAuthGuard)
   @Get(':id')
+  @ApiOperation({ summary: 'Menampilkan detail buku berdasarkan ID' })
   findOne(@Param('id', ParseIntPipe) id: number) {
     return this.booksService.findOne(id);
   }
@@ -49,6 +61,7 @@ export class BooksController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.ADMIN)
   @Put(':id')
+  @ApiOperation({ summary: 'Mengubah data buku (ADMIN only)' })
   update(
     @Param('id', ParseIntPipe) id: number,
     @Body() dto: UpdateBookDto,
@@ -60,6 +73,7 @@ export class BooksController {
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.ADMIN)
   @Delete(':id')
+  @ApiOperation({ summary: 'Menghapus buku (ADMIN only)' })
   remove(@Param('id', ParseIntPipe) id: number) {
     return this.booksService.remove(id);
   }

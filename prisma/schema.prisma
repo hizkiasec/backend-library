@@ -7,40 +7,36 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum UserRole {
-  ADMIN
-  PETUGAS
-  MEMBER
-}
-
-model Book {
+model book {
   id        Int      @id @default(autoincrement())
   title     String
   author    String
   year      Int
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime
 }
 
-model Member {
+model member {
   id        Int      @id @default(autoincrement())
   name      String
   className String
-
-  user      User?
-
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime
+  user      user?
 }
 
-model User {
-  id        Int      @id @default(autoincrement())
-  username  String   @unique
+model user {
+  id        Int       @id @default(autoincrement())
+  username  String    @unique(map: "User_username_key")
   password  String
-  role      UserRole
+  role      user_role
+  memberId  Int?      @unique(map: "User_memberId_key")
+  createdAt DateTime  @default(now())
+  member    member?   @relation(fields: [memberId], references: [id], map: "User_memberId_fkey")
+}
 
-  memberId  Int?     @unique
-  member    Member?  @relation(fields: [memberId], references: [id])
-
-  createdAt DateTime @default(now())
+enum user_role {
+  ADMIN
+  PETUGAS
+  MEMBER
 }
